@@ -1,6 +1,6 @@
 #include <dt-bindings/zmk/behaviors.h>
 
-&lt {
+/{ &lt {
     // Increase layer tap time
     tapping-term-ms = <300>;
 
@@ -25,4 +25,4 @@
      quick-tap-ms = <200>;
 
      flavor = "balanced";
-};
+}; }
