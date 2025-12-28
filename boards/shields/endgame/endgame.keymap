@@ -16,7 +16,7 @@
         &kp Q        &kp W       &kp E               &kp R          &kp T            &kp Z        &kp U            &kp I            &kp O            &kp P
         &hm_l LCTRL A  &hm_l LALT S  &hm_l LEFT_GUI D &hm_shift_l LSHFT F  &kp G  &kp H  &hm_shift_r RSHFT J  &hm_r RIGHT_GUI K  &hm_r RIGHT_ALT L  &hm_r RCTRL SEMICOLON
         &hm_shift_l LSHFT Y        &kp X       &kp C               &kp V          &mt SPACE B      &kp N        &kp M            &kp COMMA        &kp PERIOD       &kp SLASH
-        &hm LEFT_GUI MINUS                           &mt LSHFT ESC  &mt LCTRL SPACE  &lt 1 ENTER  &hm RALT BSPC                                      &hm RCTRL EQUAL
+        &mt LEFT_GUI MINUS                           &mt LSHFT ESC  &mt LCTRL SPACE  &lt 1 ENTER  &mt RALT BSPC                                      &mt RCTRL EQUAL
       >;
     };
 
