@@ -1,4 +1,3 @@
-#include <dt-bindings/zmk/behaviors.h>
 
 #define HM_TAPPING_TERM 300
 #define HM_TAPPING_TERM_FAST 200
