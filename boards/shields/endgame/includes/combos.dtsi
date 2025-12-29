@@ -1,16 +1,44 @@
-#include "util.h"
 
 / {
   combos {
     compatible = "zmk,combos";
 
-    COMBO(Left_Square_Bracket, &kp LEFT_BRACKET,2 3);
-    COMBO(Right_Square_Bracket, &kp RIGHT_BRACKET,6 7);
-    COMBO(Backspace, &kp BKSP,8 9);
-    COMBO(Tab, &kp TAB, 12 13);
-    COMBO(Slash, &kp SLASH, 17 18);
-    COMBO(Quote, &kp SQT, 26 27);
-    COMBO(Backslash, &kp BSLH, 22 23);
-    // COMBO(Hyper, &kp LG(LA(LCTRL)), 33 34);
+    Left_Square_Bracket {
+      bindings = <&kp LEFT_BRACKET>;
+      key-positions = <2 3>;
+    };
+
+    Right_Square_Bracket {
+      bindings = <&kp RIGHT_BRACKET>;
+      key-positions = <6 7>;
+    };
+    Backspace {
+      bindings = <&kp BKSP>;
+      key-positions = <8 9>;
+    };
+    Tab {
+      bindings = <&kp TAB>;
+      key-positions = <12 13>;
+    };
+
+    Slash {
+      bindings = <&kp SLASH>;
+      key-positions = <17 18>;
+    };
+
+    Quote {
+      bindings = <&kp SQT>;
+      key-positions = <26 27>;
+    };
+
+    Backslash {
+      bindings = <&kp BSLH>;
+      key-positions = <22 23>;
+    };
+
+    Hyper {
+      bindings = <&kp LG(LA(LCTRL))>;
+      key-positions = <33 34>;
+    };
   };
 };
