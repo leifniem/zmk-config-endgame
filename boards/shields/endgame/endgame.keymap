@@ -7,6 +7,13 @@
 #include "includes/combos.dtsi"
 #include "includes/homerow_mods.dtsi"
 
+#define COMBO(name, keypress, keypos) \
+combo_##name {                        \
+   timeout-ms = <100>;                \
+   bindings = <keypress>;             \
+   key-positions = <keypos>;          \
+};
+
 #define BASE 0
 #define NUM 1
 #define FN 2
@@ -19,9 +26,9 @@
     BASE {
       bindings = <
         &kp Q        &kp W       &kp E               &kp R          &kp T            &kp Z        &kp U            &kp I            &kp O            &kp P
-        &hm_l LCTRL A  &hm_l LALT S  &hm_l LEFT_GUI D &hm_shift_l LSHFT F  &kp G  &kp H  &hm_shift_r RSHFT J  &hm_r RIGHT_GUI K  &hm_r RIGHT_ALT L  &hm_r RCTRL SEMICOLON
-        &hm_shift_l LSHFT Y        &kp X       &kp C               &kp V          &hm SPACE B      &kp N        &kp M            &kp COMMA        &kp PERIOD       &kp SLASH
-        &hm LEFT_GUI MINUS                           &hm LSHFT ESC  &hm LCTRL SPACE  &lt NUM ENTER  &hm RALT BSPC                                      &hm RCTRL EQUAL
+        &mt LCTRL A  &mt LALT S  &mt LEFT_GUI D &mt LSHFT F  &kp G  &kp H  &mt RSHFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RCTRL SEMICOLON
+        &mt LSHFT Y        &kp X       &kp C               &kp V          &hm SPACE B      &kp N        &kp M            &kp COMMA        &kp PERIOD       &kp SLASH
+        &mt LEFT_GUI MINUS                           &mt LSHFT ESC  &mt LCTRL SPACE  &lt NUM ENTER  &mt RALT BSPC                                      &mt RCTRL EQUAL
       >;
     };
 
