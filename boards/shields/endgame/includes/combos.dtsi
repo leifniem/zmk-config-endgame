@@ -1,44 +1,21 @@
+#define COMBO(name, keypress, keypos) \
+combo_##name {                        \
+   timeout-ms = <100>;                \
+   bindings = <keypress>;             \
+   key-positions = <keypos>;          \
+};
 
 / {
   combos {
     compatible = "zmk,combos";
 
-    Left_Square_Bracket {
-      bindings = <&kp LEFT_BRACKET>;
-      key-positions = <2 3>;
-    };
-
-    Right_Square_Bracket {
-      bindings = <&kp RIGHT_BRACKET>;
-      key-positions = <6 7>;
-    };
-    Backspace {
-      bindings = <&kp BKSP>;
-      key-positions = <8 9>;
-    };
-    Tab {
-      bindings = <&kp TAB>;
-      key-positions = <12 13>;
-    };
-
-    Slash {
-      bindings = <&kp SLASH>;
-      key-positions = <17 18>;
-    };
-
-    Quote {
-      bindings = <&kp SQT>;
-      key-positions = <26 27>;
-    };
-
-    Backslash {
-      bindings = <&kp BSLH>;
-      key-positions = <22 23>;
-    };
-
-    Hyper {
-      bindings = <&kp LG(LA(LCTRL))>;
-      key-positions = <33 34>;
-    };
+    COMBO(Left_Square_Bracket, LEFT_BRACKET,2 3);
+    COMBO(Right_Square_Bracket, RIGHT_BRACKET,6 7);
+    COMBO(Backspace, BKSP,8 9);
+    COMBO(Tab, TAB, 12 13);
+    COMBO(Slash, SLASH, 17 18);
+    COMBO(Quote, SQT, 26 27);
+    COMBO(Backslash, BSLH, 22 23);
+    // COMBO(Hyper, LG(LA(LCTRL)), 33 34);
   };
 };
