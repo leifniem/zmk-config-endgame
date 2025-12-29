@@ -9,6 +9,6 @@
     COMBO(Slash, &kp SLASH, 17 18);
     COMBO(Quote, &kp SQT, 26 27);
     COMBO(Backslash, &kp BSLH, 22 23);
-    COMBO(Hyper, &kp LG(LA(LCTRL)), 33 34);
+    // COMBO(Hyper, &kp LG(LA(LCTRL)), 33 34);
   };
 };
