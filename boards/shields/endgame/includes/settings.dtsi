@@ -9,7 +9,7 @@
     // But holding enter without double tapping, will activate the layer.
      quick-tap-ms = <200>;
 
-     /* flavor = "balanced"; */
+     flavor = "balanced";
 };
 
 
@@ -23,5 +23,5 @@
     // But holding enter without double tapping, will activate the layer.
      quick-tap-ms = <200>;
 
-     /* flavor = "balanced"; */
+     flavor = "balanced";
 };

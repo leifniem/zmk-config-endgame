@@ -12,10 +12,17 @@
       bindings = <&kp RIGHT_BRACKET>;
       key-positions = <6 7>;
     };
+
     Backspace {
       bindings = <&kp BKSP>;
       key-positions = <8 9>;
     };
+
+    Enter {
+      bindings = <&kp ENTER>;
+      key-positions = <18 19>;
+    };
+ 
     Tab {
       bindings = <&kp TAB>;
       key-positions = <12 13>;
