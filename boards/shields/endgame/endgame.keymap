@@ -20,12 +20,12 @@
 //    ├────────────────────┼──────────────┼──────────────┼────────────────────┼──────────────┤   ├──────────┼────────────────────┼──────────────┼──────────────┼──────────────┤
 //    │ &hm_shift_l lsft Y │      X       │      C       │         V          │   mt spc B   │   │    N     │         M          │      ,       │      .       │      /       │
 //    ├────────────────────┼──────────────┴──────────────┼────────────────────┼──────────────┤   ├──────────┼────────────────────┼──────────────┴──────────────┼──────────────┤
-//    │     &hm lgui -     │                             │    &hm lsft esc    │ &hm lctl spc │   │ lt 1 ent │   &hm ralt bspc    │                             │  &hm rctl =  │
+//    │     &hm lgui -     │                             │      lt 2 esc      │ &hm lctl spc │   │ lt 1 ent │   &hm ralt bspc    │                             │  &hm rctl =  │
 //    └────────────────────┘                             └────────────────────┴──────────────┘   └──────────┴────────────────────┘                             └──────────────┘
   &qesc                 &kp W          &kp E              &kp R                 &kp T                 &kp Z         &kp U                 &kp I               &kp O               &kp P
   &hm_l LCTRL A         &hm_l LALT S   &hm_l LEFT_GUI D   &hm_shift_l LSHFT F   &kp G                 &kp H         &hm_shift_r RSHFT J   &hm_r RIGHT_GUI K   &hm_r RIGHT_ALT L   &hm_r RCTRL SEMICOLON
   &hm_shift_l LSHFT Y   &kp X          &kp C              &kp V                 &mt SPACE B           &kp N         &kp M                 &kp COMMA           &kp PERIOD          &kp SLASH
-  &hm LEFT_GUI MINUS                                      &hm LSHFT ESC         &hm LCTRL SPACE       &lt 1 ENTER   &hm RALT BSPC                                                 &hm RCTRL EQUAL
+  &hm LEFT_GUI MINUS                                      &lt 2 ESC             &hm LCTRL SPACE       &lt 1 ENTER   &hm RALT BSPC                                                 &hm RCTRL EQUAL
             >;
         };
 
@@ -38,14 +38,32 @@
 //    ├─────┼─────┼─────┼─────┼──────┤   ├─────┼──────┼──────┼─────┼──────┤
 //    │     │     │     │     │      │   │     │      │      │     │      │
 //    ├─────┼─────┴─────┼─────┼──────┤   ├─────┼──────┼──────┴─────┼──────┤
-//    │     │           │     │ mo 2 │   │     │ del  │            │      │
+//    │     │           │     │ mo 3 │   │     │ del  │            │      │
 //    └─────┘           └─────┴──────┘   └─────┴──────┘            └──────┘
   &kp N1   &kp N2   &kp N3   &kp N4   &kp N5       &kp N6   &kp N7     &kp N8     &kp N9   &kp N0
   &trans   &trans   &trans   &trans   &trans       &trans   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT
   &trans   &trans   &trans   &trans   &trans       &trans   &trans     &trans     &trans   &trans
-  &trans                     &trans   &mo 2        &trans   &kp DEL                        &trans
+  &trans                     &trans   &mo 3        &trans   &kp DEL                        &trans
             >;
         };
+      
+      symbols {
+      bindings = <
+//    ┌─────┬─────┬─────┬─────┬──────┐   ┌─────┬──────┬──────┬─────┬──────┐
+//    │  1  │  2  │  3  │  4  │  5   │   │  6  │  7   │  8   │  9  │  0   │
+//    ├─────┼─────┼─────┼─────┼──────┤   ├─────┼──────┼──────┼─────┼──────┤
+//    │     │     │     │     │      │   │     │ left │ down │ up  │ rght │
+//    ├─────┼─────┼─────┼─────┼──────┤   ├─────┼──────┼──────┼─────┼──────┤
+//    │     │     │     │     │      │   │     │      │      │     │      │
+//    ├─────┼─────┴─────┼─────┼──────┤   ├─────┼──────┼──────┴─────┼──────┤
+//    │     │           │     │ mo 4 │   │     │ del  │            │      │
+//    └─────┘           └─────┴──────┘   └─────┴──────┘            └──────┘
+  &kp N1   &kp N2   &kp N3   &kp N4   &kp N5       &kp N6   &kp N7     &kp N8     &kp N9   &kp N0
+  &trans   &trans   &trans   &trans   &trans       &trans   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT
+  &trans   &trans   &trans   &trans   &trans       &trans   &trans     &trans     &trans   &trans
+  &trans                     &trans   &mo 4        &trans   &kp DEL                        &trans
+    >;
+    };
 
         lower {
             bindings = <
