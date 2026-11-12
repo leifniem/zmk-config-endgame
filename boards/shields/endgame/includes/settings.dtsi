@@ -1,13 +1,13 @@
 
 &lt {
     // Increase layer tap time
-    tapping-term-ms = <300>;
+    tapping-term-ms = <280>;
 
     // Quickly tap-tap-holding the lt button will repeat the tap behavior
     // For example enter-enter-hold, will output multiple enter while you
     // keep holding the key.
     // But holding enter without double tapping, will activate the layer.
-     quick-tap-ms = <200>;
+     quick-tap-ms = <175>;
 
      flavor = "balanced";
 };
@@ -15,13 +15,13 @@
 
 &mt {
     // Increase layer tap time
-    tapping-term-ms = <300>;
+    tapping-term-ms = <280>;
 
     // Quickly tap-tap-holding the lt button will repeat the tap behavior
     // For example enter-enter-hold, will output multiple enter while you
     // keep holding the key.
     // But holding enter without double tapping, will activate the layer.
-     quick-tap-ms = <200>;
+     quick-tap-ms = <175>;
 
      flavor = "balanced";
 };
